@@ -14,7 +14,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     homepage = "<h1>育慈電影</h1>"
-    homepage += "<br><a href=/movie>讀取開眼電影即將上映影片，寫入Firestore</a><br>"
+    homepage += "<br><a href=/search>讀取開眼電影即將上映影片，寫入Firestore</a><br>"
     return homepage
 	
 @app.route("/movie")
