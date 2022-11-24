@@ -62,7 +62,7 @@ def search():
         info = ""
         for doc in docs:
             if MovieTitle in doc.to_dict()["title"]: 
-                info += "片名：" + doc.to_dict()["title"] + "<br>" 
+                info += "片名：" + <a href=doc.to_dict()["hyperlink"]> + doc.to_dict()["title"] + "</a>" + "<br>" 
                 info += "影片介紹：" + doc.to_dict()["hyperlink"] + "<br>"
                 info += "分級資訊：" + doc.to_dict()["rate"] + "<br><br>"           
         return info
